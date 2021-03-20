@@ -1,52 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Pricing Component</title>
+
+
 </head>
+
 <body>
+  <div id="root">
+    <img src="images/bg-top.svg" class="pattern-1">
+    <img src="images/bg-bottom.svg" class="pattern-2">
 
-  Our Pricing
-  Annually
-  Monthly
+    <main>
+      <!-- Conteúdo -->
+      <h2>Our Pricing</h2>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+      <!-- Botões de anual e mensal -->
+      <div class="control">
+        <span>Annually</span>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+        <div class="switch" id="switch">
+          <div class="indicator">
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          </div>
+        </div>
+
+        <span>Monthly</span>
+
+      </div>
+
+      <!-- Os 3 cards -->
+      <div class="cards">
+        <div class="card">
+
+          <h4>Basic</h4>
+          <h1 id="basic">$19.99</h1>
+          <div class="divider"></div>
+          <span class="info">500 GB Storage</span>
+          <div class="divider"></div>
+          <span class="info">2 Users Allowed</span>
+          <div class="divider"></div>
+          <span class="info">Send up to 3 GB</span>
+          <div class="divider"></div>
+          <button>Learn more</button>
+        </div>
+
+        <div class="card primary">
+          <h4>Professional</h4>
+          <h1 id="professional">$24.99</h1>
+          <div class="divider"></div>
+          <span class="info">1 TB Storage</span>
+          <div class="divider"></div>
+          <span class="info">5 Users Allowed</span>
+          <div class="divider"></div>
+          <span class="info">Send up to 10 GB</span>
+          <div class="divider"></div>
+          <button>Learn more</button>
+        </div>
+
+        <div class="card">
+          <h4>Master</h4>
+          <h1 id="master">$39.99</h1>
+          <div class="divider"></div>
+          <span class="info">2 TB Storage</span>
+          <div class="divider"></div>
+          <span class="info">10 Users Allowed</span>
+          <div class="divider"></div>
+          <span class="info">Send up to 20 GB</span>
+          <div class="divider"></div>
+          <button>Learn more</button>
+        </div>
+      </div>
+
+
+
+
+
+    </main>
   </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
