@@ -1,0 +1,177 @@
+:root{
+    --very-light-blue: #f6f6fe;
+    --light-blue: #b3b5c6;
+    --blue: #6d708d;
+    --dark-blue: #494c5f;
+    --gradient: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7ff;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Linhas de fundo */
+.pattern-1{
+    width:375px; 
+    height: 658px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pattern-2{
+    width: 353px;
+    height: 304px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+main h2{
+    font-size: 24px;
+    color: var(--blue);
+}
+
+main .control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+main .control span{
+    font-size: 14px;
+    color: var(--light-blue);
+}
+
+/*Botão que encobre a bolinha branca */
+main .control .switch{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 32px;
+    width: 56px;
+    background: var(--gradient);
+    margin: 0 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/* Bolinha branca que indica */
+main .control .switch .indicator{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 4px;
+}
+
+/* Cartões */
+main .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Características dos 3 Cards  */
+main .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px #494c5f27;
+    padding: 30px;
+}
+
+/* Card selecionado */
+main .cards .card.primary{
+    height: 500px;
+    background: var(--gradient);
+}
+
+main .cards .card h4{
+    font-size: 18px;
+    color: var(--blue);
+    line-height: 18px;
+}
+
+main .cards .card h1{
+    font-size: 60px;
+    color: var(--dark-blue);
+    line-height: 60px;
+    margin: 40px 0;
+}
+
+/* Linha de divisão entre os itens */
+main .cards .card .divider{
+    height: 1px;
+    width: 100%;
+    background-color: var(--light-blue);
+    opacity: 0.4;
+}
+
+/* Descrição do que vem no pacote */
+main .cards .card .info{
+    color: var(--blue);
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Botão Learn More */
+main .cards .card button{
+    width: 100%;
+    height: 44px;
+    margin-top: 32px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: white;
+    background: var(--gradient);
+}
+
+main .cards .card.primary *{
+    color: white;
+}
+
+main .cards .card.primary button{
+    background: none;
+    background-color: white;
+    color: #7679e2;
+}
+
+main .cards .card.primary .divider{
+    background-color: white;
+    opacity: 0.3;
+}
