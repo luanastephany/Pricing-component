@@ -74,13 +74,18 @@ main .control span{
 main .control .switch{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     height: 32px;
     width: 56px;
     background: var(--gradient);
+    padding: 0 4px;
     margin: 0 24px;
     border-radius: 16px;
     cursor: pointer;
+    transition: all 250ms ease;
+}
+
+main .control .switch:hover{
+    opacity: 0.5;
 }
 
 /* Bolinha branca que indica */
@@ -89,7 +94,12 @@ main .control .switch .indicator{
     width: 24px;
     border-radius: 50%;
     background-color: white;
-    margin-right: 4px;
+    transition: all 250ms ease;
+}
+
+/* Classe adicionada pelo JS */
+main .control .switch.monthly .indicator{
+    transform: translateX(24px);
 }
 
 /* Cartões */
@@ -159,6 +169,15 @@ main .cards .card button{
     letter-spacing: 1.1px;
     color: white;
     background: var(--gradient);
+    cursor: pointer;
+}
+
+main .cards .card button:hover{
+    background: none;
+    background-color: white;
+    color: #7679e2;
+    border: 1px solid #7679e2;
+    transition: all 250ms ease;
 }
 
 main .cards .card.primary *{
